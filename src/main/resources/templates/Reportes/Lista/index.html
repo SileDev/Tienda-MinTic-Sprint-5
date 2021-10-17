@@ -85,7 +85,7 @@
 					</div>
 					<div class="card-body">
 						<div class="sales-details">
-							<table>
+							<table class="table-ventas-cliente">
 								<thead>
 									<tr>
 										<td>Cedula cliente</td>
@@ -93,7 +93,7 @@
 										<td>Total ventas</td>
 									</tr>
 								</thead>
-								<tbody>
+								<tbody class="tbody-ventas-cliente">
 									<tr th:each=" ventasCliente : ${ListaVentas}">
 										<td th:text="${ventasCliente.getCedulaCliente()}"></td>
 										<td th:text="${ventasCliente.getVentas()}"></td>
@@ -102,8 +102,8 @@
 								</tbody>
 							</table>
 						</div>
-						<form>
-							<input type="button" value="Regresar" onclick="history.back()">
+						<form class="regresar">
+							<input class="btn-regresar" type="button" value="Regresar" onclick="history.back()">
 						</form>
 					</div>
 				</div>
